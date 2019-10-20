@@ -2,7 +2,7 @@ use strict;
 use warnings;
 use 5.010;
 
-use Cpanel::JSON::XS qw(encode_json decode_json);
+use JSON::MaybeXS qw(encode_json decode_json);
 
 my $student = {
     name => 'Foo Bar',

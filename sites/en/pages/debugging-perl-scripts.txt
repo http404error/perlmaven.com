@@ -71,17 +71,12 @@ Those are hard to notice without a delimiter:
 
 Scalar values can be printed like this:
 
-<code lang="perl">
-print "<$file_name>\n";
-</code>
+<include file="examples/debugging_print.pl">
 
 Here the less than and greater than signs are there only to make it easier for the reader
 to see the exact content of the variable:
 
-<code>
-<path/to/file
->
-</code>
+<include file="examples/debugging_print.txt">
 
 If the above is printed you can quickly notice that there is a trailing newline at the end of the $file_name
 variable. Probably you forgot to call <b>chomp</b>.
@@ -97,32 +92,12 @@ Otherwise, keep reading.
 
 For complex data structures (references, arrays and hashes) you can use the <hl>Data::Dumper</hl>
 
-<code lang="perl">
-use Data::Dumper qw(Dumper);
-
-print Dumper \@an_array;
-print Dumper \%a_hash;
-print Dumper $a_reference;
-</code>
+<include file="examples/data_dumper.pl">
 
 These will print something like this, which helps understand the content of the variables,
 but shows only a generic variable name such as <hl>$VAR1</hl> and <hl>$VAR2</hl>.
 
-<code>
-$VAR1 = [
-       'a',
-       'b',
-       'c'
-     ];
-$VAR1 = {
-       'a' => 1,
-       'b' => 2
-     };
-$VAR1 = {
-       'c' => 3,
-       'd' => 4
-     };
-</code>
+<include file="examples/data_dumper_out.pl">
 
 I'd recommend adding some more code and printing the name of the variable like this:
 
@@ -142,28 +117,11 @@ to gain:
 
 or with Data::Dumper like this:
 
-<code lang="perl">
-print Data::Dumper->Dump([\@an_array, \%a_hash, $a_reference],
-   [qw(an_array a_hash a_reference)]);
-</code>
+<include file="examples/data_dumper_dump_snippet.pl">
 
 getting
 
-<code>
-$an_array = [
-            'a',
-            'b',
-            'c'
-          ];
-$a_hash = {
-          'a' => 1,
-          'b' => 2
-        };
-$a_reference = {
-               'c' => 3,
-               'd' => 4
-             };
-</code>
+<include file="examples/data_dumper_out2.pl">
 
 There are nicer ways to print data structures but at this point <hl>Data::Dumper</hl>
 is good enough for our needs and it is available in every perl installation.

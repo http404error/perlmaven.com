@@ -1,4 +1,4 @@
-=title Common Errors and Warnings
+=title Common Errors and Warnings - video
 =timestamp 2015-02-20T06:01:09
 =indexes error
 =tags screencast
@@ -10,6 +10,8 @@
 =abstract start
 
 Errors and warnings while correct, they are not always that useful for beginners.
+
+There is also a listing of the articles about <a href="/common-warnings-and-error-messages">common errors and warnings in Perl</a>
 
 =abstract end
 

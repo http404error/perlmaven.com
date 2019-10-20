@@ -39,16 +39,16 @@ that we won't click on.
  <li><a href="#debian">Debian/Ubuntu Linux, system Perl with root rights</a></li>
  <li><a href="#fedora">Fedora/RedHat/Centos Linux, system Perl with root rights</a></li>
  <li><a href="#osx">Mac OSX</a></li>
- <li><a href="#cpan">Using the cpan client</a></li>
+ <li><a href="#cpan-client">Using the cpan client</a></li>
  <li><a href="#cpanm">Using cpanm</a></li>
- <li><a href="http://perlmaven.com/pro/install-perl-modules-on-freebsd">FreeBSD, system Perl with root rights</a></li>
+ <li><a href="https://perlmaven.com/pro/install-perl-modules-on-freebsd">FreeBSD, system Perl with root rights</a></li>
 </ul>
 
 
 <h2 id="dwimperl">Strawberry Perl or DWIM Perl on Windows</h2>
 
 Both <a href="http://strawberryperl.com/">Strawberry Perl</a>,
-and its derivative <a href="http://dwimperl.com/">DWIM Perl for Windows</a>,
+and its derivative <a href="http://dwimperl.szabgab.com/">DWIM Perl for Windows</a>,
 come with an already configured cpan client. We will use this client to install modules directly from CPAN:
 
 Open the Command Window (Start -> Run -> type in cmd) When you get the "DOS" prompt
@@ -156,7 +156,7 @@ maintained by <a href="http://perlschool.co.uk/">Dave Cross</a>.
 
 Follow the instructions with <b>cpan/cpanm</b> below.
 
-<h2 id="cpan">Using the cpan client</h2>
+<h2 id="cpan-client">Using the cpan client</h2>
 
 While the <hl>cpan</hl> program comes with most operating system,
 and it works well after some configuration, there is probably a better,

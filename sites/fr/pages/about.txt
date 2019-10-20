@@ -40,7 +40,7 @@ Je suis sûr que vous vous demandez quelle version de Perl je vais couvrir. Pour
 <h2>À propos de l'auteur / éditeur</h2>
 
 <p>
-Je suis <a href="http://szabgab.com/">Gabor Szabo</a>, développeur Perl depuis longtemps et formateur Perl.<br />
+Je suis <a href="https://szabgab.com/">Gabor Szabo</a>, développeur Perl depuis longtemps et formateur Perl.<br />
 <center><img src="/img/szabgab.png" alt="Gabor Szabo" /></center><br />
 Je suis conu pour être le créateur original de <a href="http://padre.perlide.org/">Padre, l'EDI pour Perl</a>, le rédacteur du <a href="http://perlweekly.com/">bulletin d'informations hebdomadaire Perl</a> et le récipiendaire du prix <a href="http://www.perl.org/advocacy/white_camel">White Camel</a> de la communauté Perl.
 </p>
@@ -62,20 +62,20 @@ Je suis conu pour être le créateur original de <a href="http://padre.perlide.o
 <h2>Les traductions</h2>
 
 <p>
-    Grâce à plusieurs bénévoles enthousiastes, <a href="http://perlmaven.com/perl-tutorial">la version originale en anglais de ce site</a> a déjà été traduite dans plusieurs autres langues. Si vous aimeriez aider dans l'une de ces langues ou dans une autre langue non encore répertoriée ci-dessous, alors veuillez svp contacter Gabor dont les coordonnées apparaissent en fin de cette page.
+    Grâce à plusieurs bénévoles enthousiastes, <a href="https://perlmaven.com/perl-tutorial">la version originale en anglais de ce site</a> a déjà été traduite dans plusieurs autres langues. Si vous aimeriez aider dans l'une de ces langues ou dans une autre langue non encore répertoriée ci-dessous, alors veuillez svp contacter Gabor dont les coordonnées apparaissent en fin de cette page.
     <ul>
-    <li><a href="http://tw.perlmaven.com/">en chinois traditionel</a></li>
-    <li><a href="http://cn.perlmaven.com/perl-tutorial">en chinois simplifié</a></li>
-    <li><a href="http://it.perlmaven.com/">en italien</a></li>
-    <li><a href="http://br.perlmaven.com/perl-tutorial">en portugais</a></li>
-    <li><a href="http://ro.perlmaven.com/">en roumain</a></li>
-    <li><a href="http://ru.perlmaven.com/">en russe</a></li>
+    <li><a href="https://tw.perlmaven.com/">en chinois traditionel</a></li>
+    <li><a href="https://cn.perlmaven.com/perl-tutorial">en chinois simplifié</a></li>
+    <li><a href="https://it.perlmaven.com/">en italien</a></li>
+    <li><a href="https://br.perlmaven.com/perl-tutorial">en portugais</a></li>
+    <li><a href="https://ro.perlmaven.com/">en roumain</a></li>
+    <li><a href="https://ru.perlmaven.com/">en russe</a></li>
     </ul>
 </p>
 
 <h2>Les traducteurs</h2>
 
-Veuillez consulter <a href="http://meta.perlmaven.com">le site méta</a>.
+Veuillez consulter <a href="https://meta.perlmaven.com">le site méta</a>.
 
 <h2 id="contact">Coordonnées</h2>
 

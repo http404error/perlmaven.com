@@ -1,21 +1,21 @@
 =title 7 of the most useful Perl command line options
-=timestamp 2013-01-17T14:45:56
+=timestamp 2018-08-31T12:00:56
 =indexes -v, -e, -E, -p, -i
-=status draft
+=status show
 =author szabgab
 =comments_disqus_enable 1
 
 =abstract start
 
 Perl has a lot of command line options. Some of them can be used to do very useful things, others are more esoteric.
-In the <a herf="/perl-tutorial">Perl tutorial</a> we already saw how to use <a href="/perl-on-the-command-line">perl on the command line</a>,
+In the <a herf="/perl-tutorial">Perl tutorial</a> we already saw how to use <a href="/perl-on-the-command-line">Perl on the command line</a>,
 let's now extend that list.
 
 =abstract end
 
 <h2>-v to get the Perl version</h2>
 
-This options just shows the version number of the perl interpreter and the Copyright information:
+This options just shows the version number of the Perl interpreter and the Copyright information:
 
 <code>
 $ perl -v
@@ -36,20 +36,20 @@ Internet, point your browser at http://www.perl.org/, the Perl Home Page.
 
 <h2>-V to get compiler details</h2>
 
-Besides the version number, this command line option will tell perl to print
+Besides the version number, this command line option will tell Perl to print
 all the information about the platform we are currently running on (In the following
 example osname=darwin means Mac OSX.
 
 It also provides the configuration parameters - the way our version of
-<a href="/how-to-build-perl-from-source-code">perl was compiled</a>. The
+<a href="/how-to-build-perl-from-source-code">Perl was compiled</a>. The
 same information is available via the <a href="https://metacpan.org/pod/Config">Config</a> module during the runtime
 of our code.
 
-The <hl>%ENV</hl> part, if available, shows the perl-related environment variables that
+The <hl>%ENV</hl> part, if available, shows the Perl-related environment variables that
 are currently in effect. These environment variables can be set in the Unix/Linux
-shell or the Windows Command Window, before running perl.
+shell or the Windows Command Window, before running Perl.
 
-Finally it lists the content of the <a href="/search/@INC">@INC</a> array, that controls where perl will look for modules
+Finally it lists the content of the <a href="/search/@INC">@INC</a> array, that controls where Perl will look for modules
 to load. One can <a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">change @INC</a> in several ways.
 
 <code>
@@ -116,8 +116,8 @@ Characteristics of this binary (from libperl):
 
 <h2>-e execute code on the command line</h2>
 
-For one-off tasks it can be very useful to be able to run a piece of perl code without creating a file.
-The code itself needs to be between quotes and due to differences between the Unix/Linux console
+For one-off tasks it can be very useful to be able to run a piece of Perl code without creating a file.
+The code itself needs to be between quotes. Due to differences between the Unix/Linux shell 
 and the MS Windows Command prompt we need to use different quotes around our code.
 
 On Unix/Linux systsem (including Mac OSX) it is recommended to put our code in single quotes as in the following
@@ -129,7 +129,7 @@ $ perl -e 'print qq{Hello World\n}'
 Hello World
 </code>
 
-On MS Windows we should use double quotes around our code.
+On MS Windows we must use double quotes around our code.
 
 <code>
 $ perl -e "print qq{Hello World\n}"
@@ -139,17 +139,18 @@ Hello World
 
 Internally, it is probably the best to use <a href="/quoted-interpolated-and-escaped-strings-in-perl">q and qq</a>
 instead of single-quote and double-quote, respectively. That might help reduce the confusion caused by
-the behaviour of the shell and command prompt.
+the behavior of the shell and command prompt.
 
 
 <h2>-E execute code on the command line with all the latest features enabled</h2>
 
-Since version 5.10 of perl has been released, perl would include some additional
-keywords (called features) in the language if the user wrote asked for them explicitely
-or by declaring a minimal version of perl with <hl>use 5.010;</hl>.
+Since version 5.10 of Perl has been released, Perl includes some additional
+keywords (called features) in the language. For improved backward compatibility these keywords are only
+enabled if the user explicitly ask for them with <hl>use feature ...</hl>. For example by writing <hl>use feature qw(say);</hl>,
+or by declaring a minimal version of Perl with <hl>use 5.010;</hl>.
 
 On the command line we can achieve the same by using <hl>-E</hl> instead of <hl>-e</hl>.
-It will turn on all the features of the perl we are currently running.
+It will turn on all the features of the version of Perl we are currently running.
 
 For me the most important of all these features, at least in one-liners is the
 <a href="/what-is-new-in-perl-5.10--say-defined-or-state">say keyword introduced in perl 5.10</a>.
@@ -176,10 +177,61 @@ Hello World
 You can notice the change from <hl>qq</hl> to <hl>q</hl>. As we don't need to include a newline <hl>\n</hl> in our
 strings we could switch from <a href="/quoted-interpolated-and-escaped-strings-in-perl">qq to q</a>.
 
-<hl>-n wrap the -e/-E code in a while loop</hl>
+<h2>-n wrap the -e/-E code in a while loop</h2>
 
 If we provide the <hl>-n</hl> command line option it will wrap our code provided using either the <hl>-e</hl>
 or the <hl>-E</hl> options in a <hl>while</hl> with a <a href="/the-diamond-operator">diamond operator</a>.
+
+So
+
+<code>
+perl -n -E 'say if /code/' file.txt
+</code>
+
+is the same as
+
+<code>
+while (<>) {
+    say if /code/;
+}
+</code>
+
+That will go over all the lines of all the files provided on the command line
+(in this case it is file.txt) and print out every line that matches the <hl>/code/</hl> regex.
+
+
+<h2>-p is like -n with print $_</h2>
+
+The <hl>-p</hl> option is very similar to the <hl>-n</hl> flag, but it also prints the content of <hl>$_</hl>
+at the end of each iteration.
+
+So we could write:
+
+<code>
+perl -p -E 's/code/foobar/' file.txt
+</code>
+
+which would become
+
+<code>
+while (<>) {
+    s/code/foobar/
+    print;
+}
+</code>
+
+That will print the result to the screen.
+
+<h2>-i for in-place editing</h2>
+
+The most common use of <hl>-p</hl> is together with the <hl>-i</hl> option that provides "in-place editing".
+It means that instead of printing to the screen, all the output generated by our one-liner will be written back to the same file it was taken from.
+
+So this one-liner will replace the first appearance of the string "code" by "foobar" in every line of the file "file.txt".
+
+<code>
+perl -i -p -E 's/code/foobar/' file.txt
+</code>
 
 
 

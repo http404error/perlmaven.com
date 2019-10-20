@@ -10,7 +10,7 @@
 <style>
 ul.horizontal {
    list-style-type: none;
-   
+
 }
 ul.horizontal li {
     display: inline-block;
@@ -65,18 +65,29 @@ ul.horizontal li {
   <li><a href="/search-cpan-org">The search.cpan.org cloning project</a> - Implementing a CPAN search engine using Plack/PSGI with MetaCPAN back-end.</li>
   <li><a href="/phonebook-with-mongodb-and-moo">Command line phonebook with MongoDB and Moo</a></li>
   <li><a href="/indexing-emails-in-an-mbox">Indexing e-mails in an mbox</a></li>
-  <li><a href="/counter">Counter Examples</a> Various solution on the simple task of building a counter.</li>
+  <li><a href="https://code-maven.com/counter">Counter Examples</a> Various solution on the simple task of building a counter.</li>
   <li><a href="/becoming-a-co-maintainer">Becoming a co-maintainer of a CPAN module - refactoring a CPAN module</a></li>
   <li><a href="/perl-critic">Perl::Critic</a> lint-like static analyzer for Perl.</li>
+  <li><a href="/markua">Implementing a Markua Parser in Perl 5</a></li>
 </ul>
 
 
 <h2>Code-Maven series</h2>
 <ul>
-  <li><a href="http://code-maven.com/angular">Angular JS</a></li>
-  <li><a href="http://code-maven.com/handlebars">Handlebars</a> the HTML templating system written in JavaScript.</li>
-  <li><a href="http://code-maven.com/javascript">JavaScript</a></li>
-  <li><a href="http://code-maven.com/nodejs">NodeJS</a></li>
+  <li><a href="https://code-maven.com/angularjs">Angular JS</a></li>
+  <li><a href="https://code-maven.com/ansible">Ansible</a></li>
+  <li><a href="https://code-maven.com/flask">Flask</a>, the Python microframework.</li>
+  <li><a href="https://code-maven.com/groovy">Groovy</a>, the programming language used for Jenkins pipelines.</li>
+  <li><a href="https://code-maven.com/handlebars">Handlebars</a> the HTML templating system written in JavaScript.</li>
+  <li><a href="https://code-maven.com/java">Java</a></li>
+  <li><a href="https://code-maven.com/javascript">JavaScript</a></li>
+  <li><a href="https://code-maven.com/jenkins">Jenkins</a>, the automation server used for Continuous Integration and Continuous Delivery.</li>
+  <li><a href="https://code-maven.com/linux">Linux</a></li>
+  <li><a href="https://code-maven.com/nodejs">NodeJS</a></li>
+  <li><a href="https://code-maven.com/php">PHP</a></li>
+  <li><a href="https://code-maven.com/python">Python</a></li>
+  <li><a href="https://code-maven.com/ruby">Ruby</a></li>
+  <li><a href="https://code-maven.com/svg">SVG</a>, Scalable Vector Graphics examples in JavaScript and Python.</li>
 </ul>
 
 </div>
@@ -98,7 +109,7 @@ You can probably skip the part about installing Perl, but the rest of the tutori
 <div class="main-content">
 Perl is often used in <b>Test Automation</b>. If you work in this field, or if you'd like to work in this field
 (it is much more fun to find bugs in other people's code than in yours :), then you can read the <a href="/perl-tutorial">Perl tutorial</a>
-and the series on <a href="http://perlmaven.com/testing">Test Automation using Perl</a>.
+and the series on <a href="https://perlmaven.com/testing">Test Automation using Perl</a>.
 </div>
 
 <div class="main-content">
@@ -107,5 +118,11 @@ article comparing <a href="/perl-cgi-mod-perl-psgi">CGI, mod_perl and PSGI</a>. 
 the generic <a href="/perl-tutorial">Perl tutorial</a> or the articles on
 <a href="/mojolicious">Mojolicious</a>,  <a href="/dancer">Perl Dancer</a>, <a href="/catalyst">Catalyst</a>,
 <a href="/psgi">PSGI/Plack</a>, or even <a href="/cgi">CGI</a>, the Common Gateway Interface, for old-school web applications.
+</div>
+
+<div class="main-content">
+In the off chance you are interested in topics other than Perl, especially related to Test Automation, Continuous
+Integration, Continuous Deployment, DevOps, then you are welcome to check out the list of
+<a href="https://hostlocal.com/">DevOps related training courses</a>.
 </div>
 

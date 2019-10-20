@@ -16,16 +16,17 @@ Some of the articles even include directions showing how to fix the error.
 
 =abstract end
 
+<slidecast file="/media/videos/beginner-perl/common-errors" youtube="Sk7QkRNTIak" />
 
 <ul>
-    <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
-         also explained in <a href="/variable-declaration-in-perl">Variable declaration in Perl</a></li>
+    <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
+    <li>Global symbol requires explicit package name explained in <a href="/variable-declaration-in-perl">Variable declaration in Perl</a></li>
     <li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
     <li><a href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</a></li>
     <li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
     <li><a href="/unknown-warnings-category">Unknown warnings category</a></li>
-    <li>Can't use string ("Foo") as a HASH ref while "strict refs" in use at ...
-       explained in <a href="/symbolic-reference-in-perl">Symbolic references in Perl</a></li>
+    <li><a href="/cant-use-string-as-a-hash-ref-while-strict-refs-in-use">Can't use string (...) as a HASH ref while "strict refs" in use at ...</a></li>
+    <li>Explained in <a href="/symbolic-reference-in-perl">Symbolic references in Perl</a></li>
     <li><a href="/cant-locate-in-inc">Can't locate ... in @INC</a></li>
     <li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
     <li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope</a></li>
@@ -35,6 +36,16 @@ Some of the articles even include directions showing how to fix the error.
     <li><a href="/creating-hash-from-an-array">Odd number of elements in hash assignment</a></li>
     <li><a href="/qw-quote-word">Possible attempt to separate words with commas</a></li>
     <li><a href="/autoload">Undefined subroutine ... called</a></li>
+    <li><a href="/useless-use-of-hash-element-in-void-context">Useless use of hash element in void context</a></li>
+    <li><a href="/useless-use-of-private-variable-in-void-context">Useless use of private variable in void context</a></li>
+    <li><a href="/readline-on-closed-filehandle">readline() on closed filehandle</a></li>
+    <li><a href="/possible-precedence-issue-with-control-flow-operator">Possible precedence issue with control flow operator</a></li>
+    <li><a href="/scalar-value-better-written-as">Scalar value ... better written as ...</a></li>
+    <li><a href="/have-exceeded-the-maximum-number-of-attempts">Have exceeded the maximum number of attempts (1000) to open temp file/dir</a></li>
+    <li><a href="/substr-outside-of-string">substr outside of string at ...</a></li>
+    <li><a href="/have-exceeded-the-maximum-number-of-attempts">Have exceeded the maximum number of attempts (1000) to open temp file/dir</a></li>
+    <li><a href="/deep-recursion-on-subroutine">Deep recursion on subroutine</a></li>
+    <li><a href="/use-of-implicit-split-to-is-deprecated">Use of implicit split to @_ is deprecated ...</a></li>
 </ul>
 
 

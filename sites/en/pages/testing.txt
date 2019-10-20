@@ -19,13 +19,10 @@ A series of articles about testing, and test automation using Perl.
   <li><a href="/tap-test-anything-protocol">TAP - Test Anything Protocol</a></li>
   <li><a href="/testing-a-simple-perl-module">Testing a simple Perl module (Test::Simple)</a></li>
   <li><a href="/test-for-warnings-in-a-perl-module">Test for warnings in a Perl Module (__WARN__, Test::Warn)</a></li>
-  <li><a href="/pro/testing-a-tree-data-structure-in-perl">Testing a tree data structure in Perl (Test::Deep)</a></li>
-</ol>
-
-<h2>Interviews</h2>
-<ol>
-  <li><a href="/chad-granum">Interview with Chad (Exodist) Granum, author of the Fennec testing tool</a></li>
-  <li><a href="/michael-schwern-on-test-automation-and-git">Interview with Michael Schwern on test automation and Git</a></li>
+  <li><a href="/testing-a-tree-data-structure-in-perl">Testing a tree data structure in Perl (Test::Deep)</a></li>
+  <li><a href="/testing-for-no-warnings">Testing for no warnings in Perl</a></li>
+  <li><a href="/self-testing-with-modulino">Self testing Perl modules using the Modulino concept</a></li>
+  <li><a href="/testing-perl-cgi">Testing Perl CGI</a></li>
 </ol>
 
 <h2>Test Automation using Perl screencasts</h2>
@@ -43,12 +40,12 @@ A series of articles about testing, and test automation using Perl.
   <li><a href="/testing-timeout-with-cmp-ok">Testing timeout with cmp_ok</a></li>
   <li><a href="/comparing-complex-data-structures-with-is-deeply">Comparing complex data-structures using is_deeply</a></li>
   <li><a href="/done-testing">Forget your plan, just call done_testing</a></li>
-  <li><a href="/pro/multiple-expected-values">	Multiple expected values - testing dice</a></li>
-  <li><a href="/pro/is-any-to-test-multiple-expected-values">Implementing 'is_any' to test multiple expected values</a></li>
-  <li><a href="/pro/is-any-create-test-module">Creating a testing module</a></li>
-  <li><a href="/pro/test-builder-object">Test::Builder object</a></li>
-  <li><a href="/pro/subtest">Organizing a test script with subtests</a></li>
-  <li><a href="/pro/test-for-expected-warnings">Test for expected warnings</a></li>
+  <li><a href="/multiple-expected-values">Multiple expected values - testing dice</a></li>
+  <li><a href="/is-any-to-test-multiple-expected-values">Implementing 'is_any' to test multiple expected values</a></li>
+  <li><a href="/is-any-create-test-module">Creating a testing module</a></li>
+  <li><a href="/test-builder-object">Test::Builder object</a></li>
+  <li><a href="/subtest">Organizing a test script with subtests</a></li>
+  <li><a href="/test-for-expected-warnings">Test for expected warnings</a></li>
   <li>---</li>
   <li><a href="/add-some-acceptance-tests">Add some acceptance tests using search.cpan.org</a></li>
   <li><a href="/what-is-the-status-of-the-current-test-script">	What is the status of the current test script?</a></li>
@@ -56,6 +53,13 @@ A series of articles about testing, and test automation using Perl.
   <li><a href="/testing-session-mocking-time">Testing sessions by mocking time</a></li>
   <li><a href="/testing-a-simple-tcpip-server">Testing a simple TCP/IP server using Net::Telnet</a></li>
   <li>---</li>
-  <li><a href="/pro/moose-test-constructor">Moose: Testing the constructor</a></li>
-</ul>
+  <li><a href="/moose-test-constructor">Moose: Testing the constructor</a></li>
+</ol>
+
+<h2>Interviews</h2>
+<ol>
+  <li><a href="/chad-granum">Interview with Chad (Exodist) Granum, author of the Fennec testing tool</a></li>
+  <li><a href="/michael-schwern-on-test-automation-and-git">Interview with Michael Schwern on test automation and Git</a></li>
+</ol>
+
 

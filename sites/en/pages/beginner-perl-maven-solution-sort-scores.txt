@@ -1,4 +1,4 @@
-=title Solution: sort scores
+=title Solution: sort scores - video
 =timestamp 2015-07-09T18:02:34
 =indexes %
 =tags screencast
@@ -18,6 +18,8 @@ Solution: of the <a href="/beginner-perl-maven-exercise-sort-scores">sort scores
 <include file="examples/hashes/score_data.pl">
 
 We run it as <hl>perl score_data.pl score_data.txt</hl>.
+
+<include file="examples/hashes/score_data.txt">
 
 The code starts with the usual <a href="/hashbang">hash-bang</a> line followed by
 <a href="/always-use-strict-and-use-warnings">use strict; and use warnings;</a>.

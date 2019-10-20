@@ -14,7 +14,7 @@
  
 많은 펄 사용자들이 신기술 사용에 더디고 어떻게 Perl 5.10 또는 향후 버전이 그들의 인생(삶)을 이롭게 하는지 보고 싶어 하기에 이 기사를 써보려 합니다. 
 
-(이 기사는 2007년 12월 24일 <a href="http://szabgab.com/">szabgab.com</a> 에서 처음 작성 되었습니다.)
+(이 기사는 2007년 12월 24일 <a href="https://szabgab.com/">szabgab.com</a> 에서 처음 작성 되었습니다.)
 
 새로운 많은 feature들이 있습니다, 간단한 몇개를 가지고 시작해 봅시다.
 
@@ -116,4 +116,4 @@ sub next_counter {
 
 매우 명확해졌습니다.
 
-<hl>state</hl> 키워드의 또다른 사용예는 <a href="http://ko.perlmaven.com/how-to-capture-and-save-warnings-in-perl">Perl에서 경고메시지를 가로채어 저장하기</a>를 확인 해보세요.
+<hl>state</hl> 키워드의 또다른 사용예는 <a href="https://ko.perlmaven.com/how-to-capture-and-save-warnings-in-perl">Perl에서 경고메시지를 가로채어 저장하기</a>를 확인 해보세요.
